@@ -13,7 +13,9 @@ const server = http.createServer((req, res) => {
   }else if(url ==='/dinosaur.html')  {
     fs.createReadStream('dinosaur.html').pipe(res)
   }
-  else {
+  else if (url ==='') {
+
+  }else {
     res.write('Doesn\'t exist');/≥π    res.end();
   }
   console.log("connected")
