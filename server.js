@@ -8,8 +8,8 @@ const server = http.createServer((req, res) => {
     fs.createReadStream('index.html').pipe(res)
   } else if(url ==='/arizona.html')  {
     fs.createReadStream('arizona.html').pipe(res)
-  } else if(url ==='/card')  {
-    fs.createReadStream('card.html').pipe(res)
+  } else if(url ==='/ending.html')  {
+    fs.createReadStream('ending.html').pipe(res)
   }else if(url ==='/dinosaur.html')  {
     fs.createReadStream('dinosaur.html').pipe(res)
   }
