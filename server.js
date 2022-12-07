@@ -13,10 +13,23 @@ const server = http.createServer((req, res) => {
   }else if(url ==='/dinosaur.html')  {
     fs.createReadStream('dinosaur.html').pipe(res)
   }
-  else if (url ==='') {
-
+  else if (url ==='/dinosaur2.html') {
+    fs.createReadStream('dinosaur2.html').pipe(res)
+  }
+  else if (url ==='/dinosaur3.html') {
+    fs.createReadStream('dinosaur3.html').pipe(res)
+  }
+  else if (url ==='/dinosaur4.html') {
+    fs.createReadStream('dinosaur4.html').pipe(res)
+  }
+  else if (url ==='/dinosaur5.html') {
+    fs.createReadStream('dinosaur5.html').pipe(res)
+  }
+  else if (url ==='/dinosaureat.html') {
+    fs.createReadStream('dinosaureat.html').pipe(res)
   }else {
-    res.write('Doesn\'t exist');/≥π    res.end();
+    res.write('Doesn\'t exist');
+    res.end();
   }
   console.log("connected")
 })
